@@ -66,19 +66,28 @@ table {
 		&.main {
 			background: $teal-main;
 		}
-		&.accent-1 {
+		&.teal-1 {
 			background: $teal-01;
 		}
-		&.accent-2 {
+		&.teal-2 {
 			background: $teal-02;
 		}
-		&.accent-3 {
+		&.teal-3 {
 			background: $teal-03;
 			> p {
 				z-index: 100;
 				color: rgba($black, 0.5);
 			}
 		}
+
+		&.accent-1 {
+			background: $accent-01;
+		}
+
+		&.accent-2 {
+			background: $accent-02;
+		}
+
 		&.trans-8 {
 			opacity: 0.8;
 		}
