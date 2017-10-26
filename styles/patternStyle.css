@@ -169,15 +169,19 @@ table {
       background: #009587; }
     .color-table tr > td.main {
       background: #00bea4; }
-    .color-table tr > td.accent-1 {
+    .color-table tr > td.teal-1 {
       background: #1ce8b5; }
-    .color-table tr > td.accent-2 {
+    .color-table tr > td.teal-2 {
       background: #63ffd9; }
-    .color-table tr > td.accent-3 {
+    .color-table tr > td.teal-3 {
       background: #a6ffea; }
-      .color-table tr > td.accent-3 > p {
+      .color-table tr > td.teal-3 > p {
         z-index: 100;
         color: rgba(0, 0, 0, 0.5); }
+    .color-table tr > td.accent-1 {
+      background: #FF5E5B; }
+    .color-table tr > td.accent-2 {
+      background: #FFF07C; }
     .color-table tr > td.trans-8 {
       opacity: 0.8; }
     .color-table tr > td.trans-6 {
@@ -547,15 +551,19 @@ table {
       background: #009587; }
     .color-table tr > td.main {
       background: #00bea4; }
-    .color-table tr > td.accent-1 {
+    .color-table tr > td.teal-1 {
       background: #1ce8b5; }
-    .color-table tr > td.accent-2 {
+    .color-table tr > td.teal-2 {
       background: #63ffd9; }
-    .color-table tr > td.accent-3 {
+    .color-table tr > td.teal-3 {
       background: #a6ffea; }
-      .color-table tr > td.accent-3 > p {
+      .color-table tr > td.teal-3 > p {
         z-index: 100;
         color: rgba(0, 0, 0, 0.5); }
+    .color-table tr > td.accent-1 {
+      background: #FF5E5B; }
+    .color-table tr > td.accent-2 {
+      background: #FFF07C; }
     .color-table tr > td.trans-8 {
       opacity: 0.8; }
     .color-table tr > td.trans-6 {
