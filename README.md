@@ -2,7 +2,7 @@
 
 [logo]: https://raw.githubusercontent.com/disastrid/bela_patternLibrary/master/logo.png "Sample: A Library for Bela"
 
-##[Launch Sample in your browser](https://belaplatform.github.io/bela_sample/)
+## [Launch Sample in your browser](https://belaplatform.github.io/bela_sample/)
 
 Sample is a pattern library. A pattern lays out the design and layout conventions for a brand or group of sites (if you're interested, there's a really good description [here](https://boagworld.com/design/pattern-library/)). This is the one for Bela's browser-based IDE and web presence. It lays out standards for visual things like design and behaviour, as well as code. 
 
