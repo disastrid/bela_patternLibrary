@@ -207,8 +207,10 @@
 			</table>
 
 			<h2>Using grey<span id="using-grey" class="sub-positioner"></span></h2>
-			<p>Grey is black with transparency applied, not a hex value.</p>
-			<p>As with the colour scheme, the grey tones are variables within the pattern library system, though they are not in even steps of 20%. The grey values for each variable is listed below.</p>
+			<p>There are two ways to use grey: As hex values, or as black with transparency applied. The reason to opt for hex values is when laying out for print, as pantone equivalency is only possible with full-saturation colours and trying to convert transparency values is tedious and time-consuming. In this section are both: Black + opacity, as well as chosen light and dark grey palettes.</p>
+
+			<p>Below is a table showing black with opacity:</p>
+			
 			<table class="color-table">
 				<tr>
 					<td style="padding-left: 40px"><p>Opacity</p></td>
@@ -234,9 +236,53 @@
 					<td><p>$grey-ultralight (5%)</p></td>
 					<td class="grey-ultralight"></td>
 				</tr>
-				</table>
+			</table>
+
+			<p>This is the Bela Light palette:</p>
+
+			<table class="color-table">
+				<tr>
+					<td style="margin-left: -10px"><p>Opacity</p></td>
+					<td><p>$grey-light-00</p><p>#fdfdfd</p> </td>
+					<td><p>$grey-light-01</p><p>#f5f5f5</p> </td>
+					<td><p>$grey-light-02</p><p>#e4e4e4</p> </td>
+					<td><p>$grey-light-03</p><p>#d5d5d5</p> </td>
+					<td><p>$grey-light-04</p><p>#a8a9a7</p> </td>
+				</tr> 
+				<tr style="height: 100px;">
+					<td><p>100%:</p></td>
+					<td class="color grey-light-00"></td>
+					<td class="color grey-light-01" ></td>
+					<td class="color grey-light-02"></td>
+					<td class="color grey-light-03"></td>
+					<td class="color grey-light-04"></td>
+				</tr>
+			</table>
+
+			<p>This is the Bela Dark palette:</p>
+
+			<table class="color-table">
+				<tr>
+					<td style="margin-left: -10px"><p>Opacity</p></td>
+					<td><p>$grey-dark-00</p><p>#b7b7b7</p> </td>
+					<td><p>$grey-dark-01</p><p>#969696</p> </td>
+					<td><p>$grey-dark-02</p><p>#656565</p> </td>
+					<td><p>$grey-dark-03</p><p>#353535</p> </td>
+					<td><p>$grey-dark-04</p><p>#000807</p> </td>
+				</tr> 
+				<tr style="height: 100px;">
+					<td><p>100%:</p></td>
+					<td class="color grey-dark-00"></td>
+					<td class="color grey-dark-01" ></td>
+					<td class="color grey-dark-02"></td>
+					<td class="color grey-dark-03"></td>
+					<td class="color grey-dark-04"></td>
+				</tr>
+			</table>
 
 			<p>* Please note: These colour rules are for RGB only and do not extend to print.</p>
+
+
 
 			<h2>A note on text over colours<span id="text-over-color" class="sub-positioner"></span></h2>
 			<p>When making text over a colour lighter, do not make the text grey - always use black (RGB 0,0,0 or #000000) and adjust the alpha value.</p>
