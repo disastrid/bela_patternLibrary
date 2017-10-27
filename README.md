@@ -42,5 +42,7 @@ This pattern library is designed for Chrome first, because the Bela IDE is curre
 - block quotes
 - rules for icon use?
 - ~~ol/ul for web use~~ Done!
+- create an SCSS library that can be dropped directly into other projects, like the new Bela website
+- CMYK equivalents for print
 
 Version 0.1, December 2016.
