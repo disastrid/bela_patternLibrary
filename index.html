@@ -2,11 +2,11 @@
 <head>
 <title>Bela Pattern Library</title>
 <link rel="stylesheet" type="text/css" href="styles/patternStyle.css" />
-<link rel="stylesheet" type="text/css" href="styles/font-awesome/fontawesome-pro-brands.css" />
-<link rel="stylesheet" type="text/css" href="styles/font-awesome/fontawesome-pro-core.css" />
-<link rel="stylesheet" type="text/css" href="styles/font-awesome/fontawesome-pro-light.css" />
-<link rel="stylesheet" type="text/css" href="styles/font-awesome/fontawesome-pro-regular.css" />
-<link rel="stylesheet" type="text/css" href="styles/font-awesome/fontawesome-pro-solid.css" />
+<link rel="stylesheet" type="text/css" href="/styles/font-awesome/fontawesome-pro-brands.css" />
+<link rel="stylesheet" type="text/css" href="/styles/font-awesome/fontawesome-pro-core.css" />
+<link rel="stylesheet" type="text/css" href="/styles/font-awesome/fontawesome-pro-light.css" />
+<link rel="stylesheet" type="text/css" href="/styles/font-awesome/fontawesome-pro-regular.css" />
+<link rel="stylesheet" type="text/css" href="/styles/font-awesome/fontawesome-pro-solid.css" />
 </head>
 
 <body>
@@ -115,9 +115,18 @@
 				<h2>Using Icons<span id="icons" class="sub-positioner"></h2>
 				<p>Bela uses Font Awesome for icons. This is to speed up loading time, and because font-based icons are extremely simple to use.</p>
 
-				<p>Bela has access to five Font Awesome icon sets. These are Solid, abbreviated fas; Regular, abbreviated far; Light, abbreviated fal; and Brands (used to create social buttons), abbreviated fab.</p>
+				<p>Bela has access to five Font Awesome icon sets. These are:</p>
+				<ol>
+					<li>Font Awesome Core (fa);</li>
+					<li>Font Awesome Solid (fas);</li>
+					<li>Font Awesome Regular (far);</li>
+					<li>Font Awesome Light (fal);</li>
+					<li>Font Awesome Brands (fab).</li>
+				</ol>
 
-				<p>Using Font Awesome is easy, and requires just an <span class="code">&lt;i&gt;&lt;/i&gt;</span>, or icon tag. You give the tag two classes: First, the Font Awesome library you want to use, and the name of the icon. For example, if you wanted to access the star icon from the Light library, you'd type this: <span class="code">&lt;i class="fal fa-star"&gt;&lt;/i&gt;</span> This would render the star icon, like this: <i class="fal fa-star"></i></p>
+				<p>* The abbreviations after the library names are the CSS class names used to call each library.</p>
+
+				<p>Using Font Awesome is easy, and requires just an <span class="code">&lt;i&gt;&lt;/i&gt;</span> (or icon) tag. You give the tag two classes: First, the Font Awesome library you want to use, and the name of the icon. These should be separated by a single space. For example, if you wanted to access the star icon from the Font Awesome Light library, you'd type this: <span class="code">&lt;i class="fal fa-star"&gt;&lt;/i&gt;</span> This would render the star icon, like this: <i class="fal fa-star"></i></p>
 
 				<p>To change the color, alignment, size or other aspects of the icon, treat it like a font in the SCSS.</p>
 
