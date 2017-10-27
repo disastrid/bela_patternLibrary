@@ -180,15 +180,15 @@
 
 }
 
-@font-face {
-    font-family: 'fontAwesome';
-    src: url('../fonts/fontawesome-webfont.woff2') format('woff2'),
-         url('../fonts/fontawesome-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
+// @font-face {
+//     font-family: 'fontAwesome';
+//     src: url('../fonts/fontawesome-webfont.woff2') format('woff2'),
+//          url('../fonts/fontawesome-webfont.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+// }
 
-$icons: fontAwesome;
+// $icons: fontAwesome;
 $font-body: poppins_light;
 $font-size: 1em;
 $line-height: 2em;
