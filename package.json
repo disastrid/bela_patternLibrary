@@ -1,0 +1,35 @@
+{
+  "name": "bela-sample",
+  "version": "1.0.0",
+  "description": "'Bela Sample 1.0'",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-concat": "^2.6.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.6.1",
+    "browser-sync": "^2.26.7",
+    "cssnano": "^4.1.10",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BelaPlatform/bela_sample.git"
+  },
+  "author": "Astrid Bin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BelaPlatform/bela_sample/issues"
+  },
+  "homepage": "https://github.com/BelaPlatform/bela_sample#readme"
+}
