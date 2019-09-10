@@ -4,45 +4,50 @@
 
 ## [Click here to launch Sample in your browser](https://belaplatform.github.io/bela_sample/)
 
-Sample is a pattern library. A pattern lays out the design and layout conventions for a brand or group of sites (if you're interested, there's a really good description [here](https://boagworld.com/design/pattern-library/)). This is the one for Bela's browser-based IDE and web presence. It lays out standards for visual things like design and behaviour, as well as code. 
+Sample is a pattern library. A pattern lays out the design and layout conventions for a brand or group of sites (if you're interested, there's a really good description [here](https://boagworld.com/design/pattern-library/)). This is Bela's design pattern guide for web, print and visual assets that codifies standards for design and interactive behaviour, as well as demonstrating the style and conventions in which these should be written. 
 
-Sample exists so Bela's design, interfaces and user experience can evolve, and things don't break every time something changes. It also exists so components can be easily extracted and applied to other projects where needed.
+## How to use this pattern library
 
-Sample is highly componentised, and relies mostly on CSS3 for functionality (though it also uses [jQuery](http://jquery.com/) and about 50 lines of Javascript). It relies on the [Sass extension language](http://sass-lang.com/) for SCSS, and rolls all styles together using the included Gulp file. 
+### Viewing
 
-## To view current library of patterns:
-1. Fork this repo.
-2. Open index.html in Chrome.
-
-Or, [just click here](https://belaplatform.github.io/bela_sample/).
-
-This will render all current patterns and components in an active web page for perusal. From here you can open the Chrome developer tools to inspect components. HTML/SCSS (and JS where applicable) for each pattern is available in the forked repo.
-
-## To make changes: 
+To look at the contents of this pattern library you can [click here](https://belaplatform.github.io/bela_sample/) to launch it in your browser. You can also view it locally by doing the following:
 
 1. Fork this repo.
-2. Run gulp in the repo (the gulp file is already included) - this processes the SCSS.
-3. Write/test your SCSS.
-4. Make a pull request.
+2. Open `src/index.html` in a browser 
 
-## To open an Issue:
+### Making or suggesting changes
 
-[Go here.](https://github.com/disastrid/bela_patternLibrary/issues)
+Web standards, dependencies and libraries change all the time. If you notice something wrong or out of date, please [log an issue](https://github.com/BelaPlatform/bela_sample/issues).
 
-### Please note:
+If you would like to develop this library and make a pull request, do the following:
 
-This pattern library is designed for Chrome first, because the Bela IDE is currently Chrome-based. Therefore, the components are untested outside Chrome (the HTML and styling should render properly across browsers, but is untested). Please don't open cross-browser issues at this time, but please liberally flag up any inconsistencies in Chrome browsers!
+1. Clone this repo.
+2. On the command line, navigate to the root of this repo and run `npm install`. This installs all the dependencies needed to compile the sass workflow and give you access to the `gulp` functionality. 
+3. Design, write and test your components. Use `gulp watch` on the command line to automatically build the site as you go and reload your browser.
+4. Make a pull request for review.
 
-## Some things still have to be done:
+## What this library contains
 
-- ~~radio buttons~~ Done! 
-- popup styles
-- ~~anchor tags~~ Done!
-- ~~fix dropdowns~~ Done!
-- block quotes
-- rules for icon use?
-- ~~ol/ul for web use~~ Done!
-- create an SCSS library that can be dropped directly into other projects, like the new Bela website
-- CMYK equivalents for print
+### A `gulp` file
 
-Version 0.1, December 2016.
+Sample uses `gulp`, a program that automates the mashing together of the scss components. At the root of the repo is the `gulpfile.js` file that tells `gulp` what to do. As of September 2019 this is Gulp 4.0 compliant.
+
+### `src` folder
+
+At the root of this repo is a `src/` file. This is where the library lives.
+
+`gulp` takes the scss files from `src/scss`, mashes them into a single css file (called `bela-sample.css`), and places this file in `src/css`.
+
+## Changelog
+
+### 0.1, Dec 2016
+
+Gulp workflow; file structure; scss components; base js.
+
+### 0.1.1 Oct 2017
+
+Updated components; added accent colours
+
+### 0.5, Sept 2019
+
+Gulp 4.0 workflow; rolled in scss from IDE upgrade; added product logos; updated components; updated layout to reflect current useage.
