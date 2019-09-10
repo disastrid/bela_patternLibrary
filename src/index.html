@@ -2,12 +2,7 @@
 <head>
 	<title>Bela Pattern Library</title>
 	<link rel="stylesheet" type="text/css" href="css/bela-sample.css" />
-	<link rel="stylesheet" type="text/css" href="styles/font-awesome.min.css" />
-	<link rel="stylesheet" href="styles/font-awesome/fontawesome-pro-brands.css" />
-	<!-- <link rel="stylesheet" href="styles/font-awesome/fontawesome-pro-core.css" /> -->
-	<link rel="stylesheet" href="styles/font-awesome/fontawesome-pro-light.css" />
-	<link rel="stylesheet" href="styles/font-awesome/fontawesome-pro-regular.css" />
-	<link rel="stylesheet" href="styles/font-awesome/fontawesome-pro-solid.css" />
+	
 </head>
 
 <body>
@@ -89,46 +84,16 @@
 			<h1>Text<span id="text" class="positioner"></span></h1>
 			<h2>Fonts<span id="fonts" class="sub-positioner"></span></h2>
 			
-				<p>Text generally uses the font Poppins.</p>	
-				<p>This is the usual font weight. <span class="bold">I can also be a bit bolder,</span> <span class="bolder">a little bolder still,</span> <span class="boldest">or really bold indeed.</span></p>
-				<p class="console">If I'm text in a console, I use a different font entirely: Inconsolata.</p>
+				<p>Body text (in print and on screens) uses the font Poppins.</p>	
+				<p>This is the usual font weight. <span class="bold">It can also be a bit bolder,</span> <span class="bolder">a little bolder still,</span> <span class="boldest">or really bold indeed.</span></p>
+				<p class="console">If it's text in a console, it uses a different font entirely: Inconsolata.</p>
 				<div class="wrapper">
 					<span class="code">There's even a class for code.</span>
 				</div>
 
-			<h2>Print and other fonts<span id="print-fonts" class="sub-positioner"></span></h2>
-				<p>The fonts used for the IDE are Poppins and Space. However, for print the main font is Montserrat. It's slighty more decorative which looks better on paper and as a standalone element (ie, as a URL in a logo or a single word on a webpage), but it was busy for the IDE. Here's some samples of Montserrat for use in online and print applications:</p>
-				<p class="mont-hair">This is Montserrat Hairline.</p>
-				<p class="mont-light">This is Montserrat Light.</p>
-				<p class="mont-reg">This is Montserrat Regular.</p>
-				<p class="mont-bold">This is Montserrat Bold - usually our URLs are in this font.</p>
-				<p>This use of Montserrat is being phased out, probably in favour of Poppins, though this isn't firm yet.</p>
-
 				<h2>Anchor tags<span id="anchor-tags" class="sub-positioner"></h2>
 				<p>Currently <a href='#'>this</a> is the style for links.</p>
 
-				<h2>Using Icons<span id="icons" class="sub-positioner"></h2>
-				<p>Bela uses Font Awesome for icons. This is to speed up loading time, and because font-based icons are extremely simple to use.</p>
-
-				<p>Bela has access to five Font Awesome icon sets. These are:</p>
-				<ol>
-					<li><span>Font Awesome Core (fa);</span></li>
-					<li><span>Font Awesome Solid (fas);</span></li>
-					<li><span>Font Awesome Regular (far);</span></li>
-					<li><span>Font Awesome Light (fal);</span></li>
-					<li><span>Font Awesome Brands (fab).</span></li>
-				</ol>
-
-				<p>* The abbreviations after the library names are the CSS class names used to call each library.</p>
-
-				<p>Using Font Awesome is easy, and requires just an <span class="code">&lt;i&gt;&lt;/i&gt;</span> (or icon) tag. You give the tag two classes: First, the Font Awesome library you want to use, and the name of the icon. These should be separated by a single space. For example, if you wanted to access the star icon from the Font Awesome Light library, you'd type this: <span class="code">&lt;i class="fal fa-star"&gt;&lt;/i&gt;</span> This would render the star icon, like this: <i class="fa fa-star"></i> Then, to change the color, alignment, size or other aspects of the icon, all you need to do is add styles like you would for any font.</p>
-
-				<p>(As always, don't forget to enclose your class names in double quotes, and separate multiple class names with a single space!)</p>
-
-				
-
-				<p><b>NOTE:</b> Using Font Awesome requires the CSS files to be included in a directory, and linked in the head of the HTML document. The files are in <span class="code">~/styles/font-awesome/</span>. View the source of this page and check the head to see how they're linked.</p>
-		
 	</section>
 
 	<hr />
@@ -526,4 +491,5 @@
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/header.js"></script>
 	<script src="js/global.js"></script>
+	<script src="https://kit.fontawesome.com/01d640b1b7.js"></script>
 </html>
