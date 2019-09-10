@@ -1,0 +1,155 @@
+// table styles
+
+// span.color 
+
+
+table {
+	font-family: poppins_light;
+	font-size: 80%;
+	border-collapse: collapse;
+	tr:first-child {
+		background-color: rgba($teal-main, 0.1);
+		font-weight: bolder;
+	}
+	tr:not(:first-child) {
+		border-bottom: 1px solid $grey-light;
+	}
+	td {
+		padding: 20px;
+		&:first-child {
+			padding-right: 50px;
+		}
+		&:not(:first-child) {
+			margin: 0 auto;
+		}
+	}
+}
+
+.color-table {
+	background-color: $white;
+	tr:first-child {
+		font-family: space_bold;
+		background-color: white;
+		> td {
+			height: auto;
+		}
+	}
+	tr:not(:first-child) {
+		border: none;
+	}
+	tr > td {
+		&:first-child {
+			font-family: space_bold;
+			width: auto;
+			max-width: 100px;
+			min-width: 60px;
+			text-align: right;
+		}
+		margin: 10px;
+		padding: 20px;
+		width: 60px;	
+		height: 60px;
+		display: inline-block;
+		font-family: space_bold;
+		vertical-align: bottom;
+		color: white;
+		> p {
+			font-size: 1em;
+			line-height: 1.5em;
+			font-family: inherit;
+			color: black;
+			vertical-align: middle;
+			}
+		&.base {
+			background: $teal-base;
+		}
+		&.main {
+			background: $teal-main;
+		}
+		&.teal-1 {
+			background: $teal-01; 
+		}
+		&.teal-2 {
+			background: $teal-02;
+		}
+		&.teal-3 {
+			background: $teal-03;
+			> p {
+				z-index: 100;
+				color: rgba($black, 0.5);
+			}
+		}
+
+		&.accent-1 {
+			background-color: $accent-01;
+		}
+
+		&.accent-2 {
+			background-color: $accent-02;
+		}
+
+		&.grey-dark-00 {
+			background-color: $grey-dark-00;
+		}
+		&.grey-dark-01 {
+			background-color: $grey-dark-01;
+		}
+		&.grey-dark-02 {
+			background-color: $grey-dark-02;
+		}
+		&.grey-dark-03 {
+			background-color: $grey-dark-03;
+		}
+		&.grey-dark-04 {
+			background-color: $grey-dark-04;
+		}
+
+		&.grey-light-00 {
+			background-color: $grey-light-00;
+		}
+		&.grey-light-01 {
+			background-color: $grey-light-01;
+		}
+		&.grey-light-02 {
+			background-color: $grey-light-02;
+		}
+		&.grey-light-03 {
+			background-color: $grey-light-03;
+		}
+		&.grey-light-04 {
+			background-color: $grey-light-04;
+		}
+
+		&.trans-8 {
+			opacity: 0.8;
+		}
+		&.trans-6 {
+			opacity: 0.6;
+		}
+		&.trans-4 {
+			opacity: 0.4;
+		}
+		&.trans-2 {
+			opacity: 0.2;
+
+		}
+		&.trans-1 {
+			opacity: 0.1;
+		}
+		&.grey-dark {
+			background: $grey-dark;
+		}
+		&.grey-mid {
+			background: $grey-mid;
+		}
+		&.grey-light {
+			background: $grey-light;
+		}
+		&.grey-ultralight {
+			background: $grey-ultralight;
+		}
+		&.black {
+			background: $black;
+		}
+	}
+}

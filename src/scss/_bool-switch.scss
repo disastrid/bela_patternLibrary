@@ -1,0 +1,58 @@
+// These are the slider switches, mainly found in the Settings menu.
+
+input[type="checkbox"].checkbox-slider
+  {
+    position: relative;
+    left: 10000px;
+    height: 18px;
+    width: 18px;
+
+    &::before, &::after {
+      position: absolute;
+      content: '';
+      display: block;
+      cursor: pointer;
+      left: -10000px;
+    }
+
+    &::before {
+      border-radius: 18px;
+      width: 32px;
+      height: 18px;
+      background: rgba($black, 0.3);
+      transition: background-color 300ms;
+    }
+
+    &:checked::before {
+      //background: #ccc;
+      background-color: rgba($teal-01, 0.6);
+      // opacity: 0.5;
+    }
+
+    &::after {
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+      width: 15px;
+      height: 15px;
+      background: #fff;
+      top: 50%;
+      transform: translateY(-50%) translateX(13%);
+      border-radius: 50%;
+      // transition: box-shadow 100ms ease-in-out, transform 100ms ease-in-out;
+      transition: transform 100ms ease-in-out;
+    }
+
+    &:checked::after {
+      // box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+      transform: translateY(-50%) translateX(99%);
+    }
+
+    &:disabled {
+    	&::before {
+    		background: rgba($black, 0.4);
+    	}
+    	&::after {
+    		background: rgba($white, 0.6);
+    	}
+
+    }
+  }

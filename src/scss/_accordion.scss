@@ -1,0 +1,93 @@
+// accordion menu
+
+button.accordion {
+    border: none;
+    border-bottom: 2px solid #fff;
+    background-color: $grey-light;
+    color: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    padding: 8px 16px;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    margin-top: 10px;
+    font-family: poppins_regular;
+    font-size: 16px;
+    transition: $trans-reg ease-in-out;
+    &:hover {
+        background: #ddd;
+        border-bottom: 2px solid $teal-main;
+    }
+    &.active {
+        background-color: rgba($black, 0.07);
+        border-bottom: 2px solid $teal-main;
+        padding: 8px 14px;
+        &:after {
+            font-family: fontAwesome;
+            content: '\2796'; /* Unicode character for "minus" sign (-) */
+        }
+    }
+    &:after {
+        font-family: fontAwesome;
+        content: '\02795'; /* Unicode character for "plus" sign (+) */
+        // content: "<i class='fa fa-plus'></i>";
+        font-size: 14px;
+        color:  rgba(0, 0, 0, 0.6);
+        float: right;
+        margin-left: 5px;
+    }
+
+    &.sub {
+        width: calc(100% - 20px);
+        background-color: #ddd;
+        margin-top: 10px;
+        margin-left: 20px;
+    &:hover {
+        background: #ddd;
+        border-bottom: 2px solid white;
+    }
+    &.active {
+        border-bottom: none;
+        background: rgba($black, 0.05);
+        // background-color: #fff;
+        // border-bottom: 2px solid $teal-main;
+        padding: 8px 14px;
+        &:after {
+            content: '\2796'; /* Unicode character for "minus" sign (-) */
+        }
+    }
+    &:after {
+        font-family: fontAwesome;
+        // content: '\02795'; /* Unicode character for "plus" sign (+) */
+        font-size: 14px;
+        color:  rgba(0, 0, 0, 0.6);
+        float: right;
+        margin-left: 5px;
+    }
+    }
+
+} 
+
+
+.panel {
+    max-height: 0;
+    overflow: hidden;
+    transition-delay: 0.4s;
+    transition: 0.2s ease-in-out;
+    opacity: 0;
+
+    &.sub {
+    	padding-left: 20px;
+        transition: height $trans-reg ease;
+    }
+}
+
+.panel.show {
+    padding-left: 10px;
+    opacity: 1;
+    max-height: 100%; /* Whatever you like, as long as its more than the height of the content (on all screen sizes) */
+    > p {
+        padding-left: 20px;
+        transition: none;
+    }
+}
