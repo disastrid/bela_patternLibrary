@@ -300,11 +300,16 @@
 				<div class="panel">
 					<p>The content panel is shown and hidden using JS when the menu header is clicked.</p>
 				</div>
-				<button class="accordion">Lookout, I'm a third accordion button</button>
+				<button class="accordion">Lookout, I have submenus</button>
 				<div class="panel">
-					<button class="accordion sub">And I'm a sub-menu!</button>
+					<p>I've got some content in here, and a couple of sub menus:</p>
+					<button class="accordion sub">I'm a sub-menu!</button>
 					<div class="panel sub">
 						<p>The same JS that shows the main content also shows the sub content!</p>
+					</div>
+					<button class="accordion sub">I am too</button>
+					<div class="panel sub">
+						<p>And here's some more content</p>
 					</div>
 				</div>
 			</div>
@@ -363,11 +368,14 @@
 		<h1>Inputs<span id="inputs" class="positioner"></span></h1>
 
 		<h2>Buttons<span id="buttons" class="sub-positioner"></span></h2>
+
 		<button>Here is a button</button>
 		<button disabled>Now it's disabled</button>
+		
 		<p><button class="create-project">We can use this to create files</button></p>
 
 		<h2>Switches<span id="switches" class="sub-positioner"></span></h2>
+		
 		<p>Here's some boolean switches that you can turn on and off:</p>
 
 		<input class="checkbox-slider" type="checkbox" checked></input>
@@ -405,8 +413,30 @@
 
 	<h2>Radio buttons<span id="radio-buttons" class="sub-positioner"></span></h2>
 	<div class="wrapper">
-		<p>A radio button is used to indicate a single choice from a range of options.
-		<div class="radio">
+		<p>A radio button is used to indicate a single choice from a range of options.</p>
+		<form>
+			<label>
+				C++
+				<input type="radio" checked>
+				<span class="radio-button"></span>
+			</label>
+			<label type="radio">
+				Pure Data
+				<input type="radio">
+				<span class="radio-button"></span>
+			</label>
+			<label type="radio">
+				Supercollider
+				<input type="radio">
+				<span class="radio-button"></span>
+			</label>
+			<label type="radio">
+				CSond
+				<input type="radio">
+				<span class="radio-button"></span>
+			</label>
+		</form>
+		<!-- <div class="radio">
 			<ul>
 				<li><input type="radio" id="cplus" name="selector">
 				<label for="cplus">C++</label>
@@ -423,7 +453,7 @@
 				<div class="check"></div>
 				</li>
 			</ul>
-		</div>
+		</div> -->
 	</section>
 
 
