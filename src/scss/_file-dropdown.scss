@@ -1,7 +1,6 @@
 // File dropdown menu - for choosing projects
 
 button.file-dropdown {
-    // opacity: 1;
     position: relative;
     width: 200px;
     background-color: #fff;
@@ -15,7 +14,7 @@ button.file-dropdown {
     display: inline;
     border: 2px solid $teal-main;
     &:before {
-        position:absolute;
+        position: absolute;
         content:" ";
         border: 8px solid transparent;
         border-top: 8px solid $teal-main;
@@ -29,7 +28,6 @@ button.file-dropdown {
 
         &:before {
             border-top: 8px solid #fff;
-            // border-top: 8px solid #fff;
         }
     }
 }
@@ -48,8 +46,6 @@ button.file-dropdown {
 
 
 
-
-
 /* Dropdown content (hidden by default) */
 .dropdown-content {
     width: 100%;
@@ -62,13 +58,14 @@ button.file-dropdown {
     
     /* Links inside the dropdown */
     a {
-        opacity: 1;
+        background-image: none;
+        color: black;
+        display: block;
         font-family: poppins_light;
         font-size: 12px;
-        color: black;
+        opacity: 1;
         padding: 8px 16px;
         text-decoration: none;
-        display: block;
         &:hover {
             background-color: $grey-light;
             color: rgba(0, 0, 0, 0.9);
