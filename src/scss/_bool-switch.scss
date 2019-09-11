@@ -2,47 +2,43 @@
 
 input[type="checkbox"].checkbox-slider
   {
-    position: relative;
-    left: 10000px;
     height: 18px;
+    left: 10000px;
+    position: relative;
     width: 18px;
 
     &::before, &::after {
-      position: absolute;
       content: '';
-      display: block;
       cursor: pointer;
+      display: block;
       left: -10000px;
+      position: absolute;
     }
 
     &::before {
-      border-radius: 18px;
-      width: 32px;
-      height: 18px;
       background: rgba($black, 0.3);
+      border-radius: 18px;
+      height: 18px;
       transition: background-color 300ms;
+      width: 32px;
     }
 
     &:checked::before {
-      //background: #ccc;
-      background-color: rgba($teal-01, 0.6);
-      // opacity: 0.5;
+      background-color: rgba($teal-01, 0.8);
     }
 
     &::after {
+      background: $white;
+      border-radius: 50%;
       box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
-      width: 15px;
       height: 15px;
-      background: #fff;
       top: 50%;
       transform: translateY(-50%) translateX(13%);
-      border-radius: 50%;
-      // transition: box-shadow 100ms ease-in-out, transform 100ms ease-in-out;
       transition: transform 100ms ease-in-out;
+      width: 15px;
     }
 
     &:checked::after {
-      // box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
       transform: translateY(-50%) translateX(99%);
     }
 
