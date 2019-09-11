@@ -1,0 +1,11 @@
+.graphics {
+  display: inline-block;
+  padding-right: 2em;
+  > img {
+    width: 300px;
+  }
+  figcaption {
+    font-size: .8em;
+    padding-bottom: 2em;
+  }
+}
