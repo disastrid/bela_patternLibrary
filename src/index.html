@@ -1,542 +1,601 @@
 <html>
 <head>
-	<title>Bela Pattern Library</title>
-	<link rel="stylesheet" type="text/css" href="css/bela-sample.css" />
-	
+  <title>Bela Pattern Library</title>
+  <link rel="stylesheet" type="text/css" href="css/bela-sample.css" />
+  
 </head>
 
 <body>
 
 <div id="hero">
-	<img src="images/logo_notext.png">
-	<span>A pattern library for <a href="http://bela.io"><span></span></a></span>
+  <img src="images/logo_notext.png">
+  <span>A pattern library for <a href="http://bela.io"><span></span></a></span>
 </div>
 
 <!-- The sidebar menu -->
 
 <div id="main">
-	<div class="sidebar">
-		<a href="#intro">Intro</a>
-		<a href="#text">Text</a>
-			<span class="sublinks text_section">
-				<a href="#fonts">Fonts</a>
-				<a href="#anchor-tags">Anchor Tags</a>
-			</span>
-		<a href="#color">Color</a>
-			<span class="sublinks color_section">
-				<a href="#base-color">Base color scheme</a>
-				<a href="#accent-colors">Accent colors</a>
-				<a href="#using-grey">Using grey</a>
-				<a href="#text-over-color">A note on text over colour</a>
-			</span>
-		<a href="#menus">Menus</a>
-			<span class="sublinks menus_section">
-				<a href="#accordion">Accordion menu</a>
-				<a href="#file-dropdown">File dropdown</a>
-				<a href="#mini-dropdown">Mini dropdown</a>
-			</span>
-		<a href="#inputs">Inputs</a>
-			<span class="sublinks inputs_section">
-				<a href="#buttons">Buttons</a>
-				<a href="#switches">Switches</a>
-				<a href="#number-selector">Number selectors</a>
-				<a href="#text-boxes">Text boxes</a>
-				<a href="#sliders">Sliders</a>
-				<a href="#radio-buttons">Radio buttons</a>
-			</span>
-		<a href="#data">Data</a>
-			<span class="sublinks data_section">
-				<a href="#tables">Tables</a>
-				<a href="#u-lists">Unordered lists</a>
-				<a href="#o-lists">Ordered lists</a>
-			</span>
-		<a href="#products">Products</a>
-			<span class="sublinks products_section">
-				<a href="#main-logo">Bela Logo</a>
-				<a href="#trill-logo">TRILL</a>
-				<a href="#salt-pepper-logo">SALT and PEPPER</a>
-				<a href="#made-with-logo">Made with Bela</a>
-			</span>
+  <div class="sidebar">
+    <a href="#intro">Intro</a>
+    <a href="#text">Text</a>
+      <span class="sublinks text_section">
+        <a href="#fonts">Fonts</a>
+        <a href="#anchor-tags">Anchor Tags</a>
+      </span>
+    <a href="#color">Color</a>
+      <span class="sublinks color_section">
+        <a href="#base-color">Base color scheme</a>
+        <a href="#accent-colors">Accent colors</a>
+        <a href="#using-grey">Using grey</a>
+        <a href="#text-over-color">A note on text over colour</a>
+      </span>
+    <a href="#menus">Menus</a>
+      <span class="sublinks menus_section">
+        <a href="#accordion">Accordion menu</a>
+        <a href="#file-dropdown">File dropdown</a>
+        <a href="#mini-dropdown">Mini dropdown</a>
+      </span>
+    <a href="#inputs">Inputs</a>
+      <span class="sublinks inputs_section">
+        <a href="#buttons">Buttons</a>
+        <a href="#switches">Switches</a>
+        <a href="#number-selector">Number selectors</a>
+        <a href="#text-boxes">Text boxes</a>
+        <a href="#sliders">Sliders</a>
+        <a href="#radio-buttons">Radio buttons</a>
+      </span>
+    <a href="#data">Data</a>
+      <span class="sublinks data_section">
+        <a href="#tables">Tables</a>
+        <a href="#u-lists">Unordered lists</a>
+        <a href="#o-lists">Ordered lists</a>
+      </span>
+    <a href="#logos">Logos</a>
+      <span class="sublinks logos_section">
+        <a href="#main-logo">Bela Logo</a>
+        <a href="#made-with-logo">Made with Bela</a>
+        <a href="#trill-logo">TRILL</a>
+        <a href="#salt-pepper-logo">SALT and PEPPER</a>
+      </span>
 
-	</div>
+  </div>
 
-	<!-- The good stuff starts here -->
+  <!-- The good stuff starts here -->
 
-	<div class="content">
-	<section>
-		<h1>Welcome to Sample.<span id="intro" class="positioner"></span></h1>
-		<p>Sample is a pattern library designed for Bela.</p>
-		<p>The purpose of a pattern library is to provide a cohesive description of the design elements (colours, font choices, appearance, etc) for an application or brand. Sample is the pattern library for the Bela, and describes the components used in the browser-based IDE and web properties as well as the elements of Bela's general brand presence.</p>
+  <div class="content">
+  <section>
+    <h1>Welcome to Sample.<span id="intro" class="positioner"></span></h1>
+    <p>Sample is a pattern library designed for Bela.</p>
+    <p>The purpose of a pattern library is to provide a cohesive description of the design elements (colours, font choices, appearance, etc) for an application or brand. Sample is the pattern library for the Bela, and describes the components used in the browser-based IDE and web properties as well as the elements of Bela's general brand presence.</p>
 
-		<p>A pattern library is never finished, and Sample is intended to continuously evolve. As we add features or formalise their use, they will be added to this document.</p>
+    <p>A pattern library is never finished, and Sample is intended to continuously evolve. As we add features or formalise their use, they will be added to this document.</p>
 
-		<p>In the forkable version of this reference the CSS is exhaustively componentised for the sake of clarity and reproducability. This library does most of its work with CSS, but does include jQuery (all JS functionality is contained in the global.js file, which is designed to be lightweight and is currently about 50 lines). Please fork this repo and have a poke around.</p>
+    <p>In the forkable version of this reference the CSS is exhaustively componentised for the sake of clarity and reproducability. This library does most of its work with CSS, but does include jQuery (all JS functionality is contained in the global.js file, which is designed to be lightweight and is currently about 50 lines). Please fork this repo and have a poke around.</p>
 
-		<p>Current limitations:</p>
-		<ul>
-			<li>These patterns are optimised for Chrome, because our IDE is designed for Chrome.</li>
-			<li>These patterns do not yet include functionality for mobile devices. This is because this library has evolved in response to Bela's browser-based needs, and apart from our responsive sites we don't do much with devices. This page should be viewed in a browser as it's not optimised at all for devices.</li>
-		</ul>
+    <p>Current limitations:</p>
+    <ul>
+      <li>These patterns are optimised for Chrome, because our IDE is designed for Chrome.</li>
+      <li>These patterns do not yet include functionality for mobile devices. This is because this library has evolved in response to Bela's browser-based needs, and apart from our responsive sites we don't do much with devices. This page should be viewed in a browser as it's not optimised at all for devices.</li>
+    </ul>
 
-		<p>For suggestions, please open a <a href="https://github.com/disastrid/bela_patternLibrary/issues">Github issue</a>.</p>
+    <p>For suggestions, please open a <a href="https://github.com/disastrid/bela_patternLibrary/issues">Github issue</a>.</p>
 
-		<p>Sample 0.5, September 2019, by <a href="http://github.com/disastrid">Astrid Bin</a></p>
-	</section>
+    <p>Sample 0.5, September 2019, by <a href="http://github.com/disastrid">Astrid Bin</a></p>
+  </section>
 
-	<hr />
+  <hr />
 
-	<section>
-			<h1>Text<span id="text" class="positioner"></span></h1>
-			<h2>Fonts<span id="fonts" class="sub-positioner"></span></h2>
-			
-				<p>Body text (in print and on screens) uses the font Poppins.</p>	
-				<p>This is the usual font weight. <span class="bold">It can also be a bit bolder,</span> <span class="bolder">a little bolder still,</span> <span class="boldest">or really bold indeed.</span></p>
-				<p class="console">If it's text in a console, it uses a different font entirely: Inconsolata.</p>
-				<div class="wrapper">
-					<span class="code">There's even a class for code.</span>
-				</div>
+  <section>
+      <h1>Text<span id="text" class="positioner"></span></h1>
+      <h2>Fonts<span id="fonts" class="sub-positioner"></span></h2>
+      
+        <p>Body text (in print and on screens) uses the font Poppins.</p>  
+        <p>This is the usual font weight. <span class="bold">It can also be a bit bolder,</span> <span class="bolder">a little bolder still,</span> <span class="boldest">or really bold indeed.</span></p>
+        <p class="console">If it's text in a console, it uses a different font entirely: Inconsolata.</p>
+        <div class="wrapper">
+          <span class="code">There's even a class for code.</span>
+        </div>
 
-				<h2>Anchor tags<span id="anchor-tags" class="sub-positioner"></h2>
-				<p>Currently <a href='#'>this</a> is the style for links.</p>
+        <h2>Anchor tags<span id="anchor-tags" class="sub-positioner"></h2>
+        <p>Currently <a href='#'>this</a> is the style for links.</p>
 
-	</section>
+  </section>
 
-	<hr />
+  <hr />
 
-	<section>
-		<h1>Color<span id="color" class="positioner"></span></h1>
-			<h2>Bela's base color scheme<span id="base-color" class="sub-positioner"></span></h2>
-				<p>The colour palette is derived from Google's Material palette, though it has been optimised for Bela's unique UI needs.</p>
+  <section>
+    <h1>Color<span id="color" class="positioner"></span></h1>
+      <h2>Bela's base color scheme<span id="base-color" class="sub-positioner"></span></h2>
+        <p>The colour palette is derived from Google's Material palette, though it has been optimised for Bela's unique UI needs.</p>
 
-				<p>This pattern library contains variables for the 5 core teal colours (one parent, one main, three accents), and are used with aplha values with steps of 20%.</p>
-			<table class="color-table">
-				<tr>
-					<td style="margin-left: -10px"><p>Opacity</p></td>
-					<td><p>$teal-base</p><p>#009587</p> </td>
-					<td><p>$teal-main</p><p>#00bea4</p> </td>
-					<td><p>$teal-01</p><p>#1ce8b5</p> </td>
-					<td><p>$teal-02</p><p>#63ffd9</p> </td>
-					<td><p>$teal-03</p><p>#a6ffea</p> </td>
-				</tr> 
-				<tr style="height: 100px;">
-					<td><p>100%:</p></td>
-					<td class="color base"></td>
-					<td class="color main" ></td>
-					<td class="color teal-1"></td>
-					<td class="color teal-2"></td>
-					<td class="color teal-3"></td>
-				</tr>
-				<tr>
-					<td><p>80%:</p></td>
-					<td class="color base trans-8"></td>
-					<td class="color main trans-8"></td>
-					<td class="color teal-1 trans-8"></td>
-					<td class="color teal-2 trans-8"></td>
-					<td class="color teal-3 trans-8"></td>
-				</tr>
-				<tr>
-					<td><p>60%:</p></td>
-					<td class="color base trans-6"></td>
-					<td class="color main trans-6"></td>
-					<td class="color teal-1 trans-6"></td>
-					<td class="color teal-2 trans-6"></td>
-					<td class="color teal-3 trans-6"></td>
-				</tr>
-				<tr>
-					<td><p>40%:</p></td>
-					<td class="color base trans-4"></td>
-					<td class="color main trans-4"></td>
-					<td class="color teal-1 trans-4"></td>
-					<td class="color teal-2 trans-4"></td>
-					<td class="color teal-3 trans-4"></td>
-				</tr>
-				<tr>
-					<td><p>20%:</p></td>
-					<td class="color base trans-2"></td>
-					<td class="color main trans-2"></td>
-					<td class="color teal-1 trans-2"></td>
-					<td class="color teal-2 trans-2"></td>
-					<td class="color teal-3 trans-2"></td>
-				</tr>
-			</table>
+        <p>This pattern library contains variables for the 5 core teal colours (one parent, one main, three accents), and are used with aplha values with steps of 20%.</p>
+      <table class="color-table">
+        <tr>
+          <td style="margin-left: -10px"><p>Opacity</p></td>
+          <td><p>$teal-base</p><p>#009587</p> </td>
+          <td><p>$teal-main</p><p>#00bea4</p> </td>
+          <td><p>$teal-01</p><p>#1ce8b5</p> </td>
+          <td><p>$teal-02</p><p>#63ffd9</p> </td>
+          <td><p>$teal-03</p><p>#a6ffea</p> </td>
+        </tr> 
+        <tr style="height: 100px;">
+          <td><p>100%:</p></td>
+          <td class="color base"></td>
+          <td class="color main" ></td>
+          <td class="color teal-1"></td>
+          <td class="color teal-2"></td>
+          <td class="color teal-3"></td>
+        </tr>
+        <tr>
+          <td><p>80%:</p></td>
+          <td class="color base trans-8"></td>
+          <td class="color main trans-8"></td>
+          <td class="color teal-1 trans-8"></td>
+          <td class="color teal-2 trans-8"></td>
+          <td class="color teal-3 trans-8"></td>
+        </tr>
+        <tr>
+          <td><p>60%:</p></td>
+          <td class="color base trans-6"></td>
+          <td class="color main trans-6"></td>
+          <td class="color teal-1 trans-6"></td>
+          <td class="color teal-2 trans-6"></td>
+          <td class="color teal-3 trans-6"></td>
+        </tr>
+        <tr>
+          <td><p>40%:</p></td>
+          <td class="color base trans-4"></td>
+          <td class="color main trans-4"></td>
+          <td class="color teal-1 trans-4"></td>
+          <td class="color teal-2 trans-4"></td>
+          <td class="color teal-3 trans-4"></td>
+        </tr>
+        <tr>
+          <td><p>20%:</p></td>
+          <td class="color base trans-2"></td>
+          <td class="color main trans-2"></td>
+          <td class="color teal-1 trans-2"></td>
+          <td class="color teal-2 trans-2"></td>
+          <td class="color teal-3 trans-2"></td>
+        </tr>
+      </table>
 
-			<h2>Bela's accent colors<span id="accent-colors" class="sub-positioner"></span></h2>
-			<p>There are a couple of accent colours that can be used for small visual accents.</p>
+      <h2>Bela's accent colors<span id="accent-colors" class="sub-positioner"></span></h2>
+      <p>There are a couple of accent colours that can be used for small visual accents.</p>
 
-			<table class="color-table">
-				<tr>
-					<td style="margin-left: -10px"><p>Opacity</p></td>
-					<td><p>$accent-1</p><p>#ff5e5b</p> </td>
-					<td><p>$accent-2</p><p>#fff07c</p> </td>
-				</tr>
+      <table class="color-table">
+        <tr>
+          <td style="margin-left: -10px"><p>Opacity</p></td>
+          <td><p>$accent-1</p><p>#ff5e5b</p> </td>
+          <td><p>$accent-2</p><p>#fff07c</p> </td>
+        </tr>
 
-				<tr style="height: 100px;">
-					<td><p>100%:</p></td>
-					<td class="color accent-1"></td>
-					<td class="color accent-2" ></td>
-				</tr>
+        <tr style="height: 100px;">
+          <td><p>100%:</p></td>
+          <td class="color accent-1"></td>
+          <td class="color accent-2" ></td>
+        </tr>
 
-				<tr style="height: 100px;">
-					<td><p>80%:</p></td>
-					<td class="color accent-1 trans-8"></td>
-					<td class="color accent-2 trans-8" ></td>
-				</tr>
+        <tr style="height: 100px;">
+          <td><p>80%:</p></td>
+          <td class="color accent-1 trans-8"></td>
+          <td class="color accent-2 trans-8" ></td>
+        </tr>
 
-				<tr style="height: 100px;">
-					<td><p>60%:</p></td>
-					<td class="color accent-1 trans-6"></td>
-					<td class="color accent-2 trans-6" ></td>
-				</tr>
-				<tr style="height: 100px;">
-					<td><p>40%:</p></td>
-					<td class="color accent-1 trans-4"></td>
-					<td class="color accent-2 trans-4" ></td>
-				</tr>
-				<tr style="height: 100px;">
-					<td><p>20%:</p></td>
-					<td class="color accent-1 trans-2"></td>
-					<td class="color accent-2 trans-2" ></td>
-				</tr>
-			</table>
+        <tr style="height: 100px;">
+          <td><p>60%:</p></td>
+          <td class="color accent-1 trans-6"></td>
+          <td class="color accent-2 trans-6" ></td>
+        </tr>
+        <tr style="height: 100px;">
+          <td><p>40%:</p></td>
+          <td class="color accent-1 trans-4"></td>
+          <td class="color accent-2 trans-4" ></td>
+        </tr>
+        <tr style="height: 100px;">
+          <td><p>20%:</p></td>
+          <td class="color accent-1 trans-2"></td>
+          <td class="color accent-2 trans-2" ></td>
+        </tr>
+      </table>
 
-			<h2>Using grey<span id="using-grey" class="sub-positioner"></span></h2>
-			<p>There are two ways to use grey: As hex values, or as black with transparency applied. The reason to opt for hex values is when laying out for print, as pantone equivalency is only possible with full-saturation colours and trying to convert transparency values is tedious and time-consuming. In this section are both: Black + opacity, as well as chosen light and dark grey palettes.</p>
+      <h2>Using grey<span id="using-grey" class="sub-positioner"></span></h2>
+      <p>There are two ways to use grey: As hex values, or as black with transparency applied. The reason to opt for hex values is when laying out for print, as pantone equivalency is only possible with full-saturation colours and trying to convert transparency values is tedious and time-consuming. In this section are both: Black + opacity, as well as chosen light and dark grey palettes.</p>
 
-			<p>Below is a table showing black with opacity:</p>
-			
-			<table class="color-table">
-				<tr>
-					<td style="padding-left: 40px"><p>Opacity</p></td>
-					<td style="padding-left: 25px"><p>Result</p></td>
-				</tr>
-				<tr>
-					<td><p>$black (100%)</p></td>
-					<td class="black"></td>
-				</tr>
-				<tr>
-					<td><p>$grey-dark (60%)</p></td>
-					<td class="grey-dark"></td>
-				</tr>
-				<tr>
-					<td><p>$grey-mid (30%)</p></td>
-					<td class="grey-mid"></td>
-				</tr>
-				<tr>
-					<td><p>$grey-light (10%)</p></td>
-					<td class="grey-light"></td>
-				</tr>
-				<tr>
-					<td><p>$grey-ultralight (5%)</p></td>
-					<td class="grey-ultralight"></td>
-				</tr>
-			</table>
+      <p>Below is a table showing black with opacity:</p>
+      
+      <table class="color-table">
+        <tr>
+          <td style="padding-left: 40px"><p>Opacity</p></td>
+          <td style="padding-left: 25px"><p>Result</p></td>
+        </tr>
+        <tr>
+          <td><p>$black (100%)</p></td>
+          <td class="black"></td>
+        </tr>
+        <tr>
+          <td><p>$grey-dark (60%)</p></td>
+          <td class="grey-dark"></td>
+        </tr>
+        <tr>
+          <td><p>$grey-mid (30%)</p></td>
+          <td class="grey-mid"></td>
+        </tr>
+        <tr>
+          <td><p>$grey-light (10%)</p></td>
+          <td class="grey-light"></td>
+        </tr>
+        <tr>
+          <td><p>$grey-ultralight (5%)</p></td>
+          <td class="grey-ultralight"></td>
+        </tr>
+      </table>
 
-			<p>This is the Bela Light palette:</p>
+      <p>This is the Bela Light palette:</p>
 
-			<table class="color-table">
-				<tr>
-					<td><p>Opacity</p></td>
-					<td><p>$grey-light-00</p><p>#fdfdfd</p></td>
-					<td><p>$grey-light-01</p><p>#f5f5f5</p></td>
-					<td><p>$grey-light-02</p><p>#e4e4e4</p></td>
-					<td><p>$grey-light-03</p><p>#d5d5d5</p></td>
-					<td><p>$grey-light-04</p><p>#a8a9a7</p></td>
-				</tr> 
-				<tr style="height: 100px;">
-					<td><p>100%:</p></td>
-					<td class="grey-light-00"></td>
-					<td class="grey-light-01" ></td>
-					<td class="grey-light-02"></td>
-					<td class="grey-light-03"></td>
-					<td class="grey-light-04"></td>
-				</tr>
-			</table>
+      <table class="color-table">
+        <tr>
+          <td><p>Opacity</p></td>
+          <td><p>$grey-light-00</p><p>#fdfdfd</p></td>
+          <td><p>$grey-light-01</p><p>#f5f5f5</p></td>
+          <td><p>$grey-light-02</p><p>#e4e4e4</p></td>
+          <td><p>$grey-light-03</p><p>#d5d5d5</p></td>
+          <td><p>$grey-light-04</p><p>#a8a9a7</p></td>
+        </tr> 
+        <tr style="height: 100px;">
+          <td><p>100%:</p></td>
+          <td class="grey-light-00"></td>
+          <td class="grey-light-01" ></td>
+          <td class="grey-light-02"></td>
+          <td class="grey-light-03"></td>
+          <td class="grey-light-04"></td>
+        </tr>
+      </table>
 
-			<p>This is the Bela Dark palette:</p>
+      <p>This is the Bela Dark palette:</p>
 
-			<table class="color-table">
-				<tr>
-					<td><p>Opacity</p></td>
-					<td><p>$grey-dark-00</p><p>#b7b7b7</p></td>
-					<td><p>$grey-dark-01</p><p>#969696</p></td>
-					<td><p>$grey-dark-02</p><p>#656565</p></td>
-					<td><p>$grey-dark-03</p><p>#353535</p></td>
-					<td><p>$grey-dark-04</p><p>#000807</p></td>
-				</tr> 
-				<tr style="height: 100px;">
-					<td><p>100%:</p></td>
-					<td class="grey-dark-00"></td>
-					<td class="grey-dark-01"></td>
-					<td class="grey-dark-02"></td>
-					<td class="grey-dark-03"></td>
-					<td class="grey-dark-04"></td>
-				</tr>
-			</table>
+      <table class="color-table">
+        <tr>
+          <td><p>Opacity</p></td>
+          <td><p>$grey-dark-00</p><p>#b7b7b7</p></td>
+          <td><p>$grey-dark-01</p><p>#969696</p></td>
+          <td><p>$grey-dark-02</p><p>#656565</p></td>
+          <td><p>$grey-dark-03</p><p>#353535</p></td>
+          <td><p>$grey-dark-04</p><p>#000807</p></td>
+        </tr> 
+        <tr style="height: 100px;">
+          <td><p>100%:</p></td>
+          <td class="grey-dark-00"></td>
+          <td class="grey-dark-01"></td>
+          <td class="grey-dark-02"></td>
+          <td class="grey-dark-03"></td>
+          <td class="grey-dark-04"></td>
+        </tr>
+      </table>
 
-			<p>* Please note: These colour rules are for RGB only and do not extend to print.</p>
+      <p>* Please note: These colour rules are for RGB only and do not extend to print.</p>
 
 
 
-			<h2>A note on text over colours<span id="text-over-color" class="sub-positioner"></span></h2>
-			<p>When making text over a colour lighter, do not make the text grey - always use black (RGB 0,0,0 or #000000) and adjust the alpha value.</p>
-			<p style="display: inline">For example, the box on the left uses</p> <p class="console code" style="display: inline">color: rgba(0,0,0,0.5)</p>, <p style="display: inline">while the one on the right uses the equivalent hex code for middle grey, </p> <p class="console code " style="display: inline">color: #7d7d7d</p>. <p>There's definitely a difference in readability, particularly with higher resolution screens.</p>
-			<div class="readable"><p>Readable</p></div>
-			<div class="less-readable"><p>Less readable</div>
-		<!-- This section shows how colour should be used in all Bela projects. -->
-	</section>
+      <h2>A note on text over colours<span id="text-over-color" class="sub-positioner"></span></h2>
+      <p>When making text over a colour lighter, do not make the text grey - always use black (RGB 0,0,0 or #000000) and adjust the alpha value.</p>
+      <p style="display: inline">For example, the box on the left uses</p> <p class="console code" style="display: inline">color: rgba(0,0,0,0.5)</p>, <p style="display: inline">while the one on the right uses the equivalent hex code for middle grey, </p> <p class="console code " style="display: inline">color: #7d7d7d</p>. <p>There's definitely a difference in readability, particularly with higher resolution screens.</p>
+      <div class="readable"><p>Readable</p></div>
+      <div class="less-readable"><p>Less readable</div>
+    <!-- This section shows how colour should be used in all Bela projects. -->
+  </section>
 
-	<hr />
+  <hr />
 
-	<section>
-		<h1>Menus<span id="menus" class="positioner"></span></h1>
-		<!-- This section shows off different ways of selecting from a number of options. -->
-		<h2>Accordion Menu<span id="accordion" class="sub-positioner"></span></h2>
-			<div class="wrapper">
-				<button class="accordion">I am an accordion menu</button>
-				<div class="panel">
-					<p>I am some content that shows when the accordion button is pressed.</p>
-				</div>
-				<button class="accordion">I am another accordion button</button>
-				<div class="panel">
-					<p>The content panel is shown and hidden using JS when the menu header is clicked.</p>
-				</div>
-				<button class="accordion">Lookout, I have submenus</button>
-				<div class="panel">
-					<p>I've got some content in here, and a couple of sub menus:</p>
-					<button class="accordion sub">I'm a sub-menu!</button>
-					<div class="panel sub">
-						<p>The same JS that shows the main content also shows the sub content!</p>
-					</div>
-					<button class="accordion sub">I am too</button>
-					<div class="panel sub">
-						<p>And here's some more content</p>
-					</div>
-				</div>
-			</div>
+  <section>
+    <h1>Menus<span id="menus" class="positioner"></span></h1>
+    <!-- This section shows off different ways of selecting from a number of options. -->
+    <h2>Accordion Menu<span id="accordion" class="sub-positioner"></span></h2>
+      <div class="wrapper">
+        <button class="accordion">I am an accordion menu</button>
+        <div class="panel">
+          <p>I am some content that shows when the accordion button is pressed.</p>
+        </div>
+        <button class="accordion">I am another accordion button</button>
+        <div class="panel">
+          <p>The content panel is shown and hidden using JS when the menu header is clicked.</p>
+        </div>
+        <button class="accordion">Lookout, I have submenus</button>
+        <div class="panel">
+          <p>I've got some content in here, and a couple of sub menus:</p>
+          <button class="accordion sub">I'm a sub-menu!</button>
+          <div class="panel sub">
+            <p>The same JS that shows the main content also shows the sub content!</p>
+          </div>
+          <button class="accordion sub">I am too</button>
+          <div class="panel sub">
+            <p>And here's some more content</p>
+          </div>
+        </div>
+      </div>
 
-			<h2>Dropdown menu: Files<span id="file-dropdown" class="sub-positioner"></span></h2>
-			<p>This element should, traditionally, be an input drop-down. However I have taken the liberty of making it a bit fancy because picking a file name is a significant event that happens on its own as an atomic action, and is not part of a larger set of choices (the way that, for example, changing settings are where you might be adjusting many values as part of the action "changing settings"). Therefore, this is a list of links in a hidden <span class="code">div</span> element, instead of a list of options in a <span class="code">select</span> input element.</p>
-			<div class="wrapper">
-				<span class="dropdown">
-					<button class="file-dropdown" name="project-dropdown">Select a project ...</button>
-					<div id="project-dropdown" class="dropdown-content">
-						<a href="#">Link 1</a>
-						<a href="#">Link 2</a>
-						<a href="#">Link 3</a>
-					</div>
-				</span>
-			</div>
+      <h2>Dropdown menu: Files<span id="file-dropdown" class="sub-positioner"></span></h2>
+      <p>This element should, traditionally, be an input drop-down. However I have taken the liberty of making it a bit fancy because picking a file name is a significant event that happens on its own as an atomic action, and is not part of a larger set of choices (the way that, for example, changing settings are where you might be adjusting many values as part of the action "changing settings"). Therefore, this is a list of links in a hidden <span class="code">div</span> element, instead of a list of options in a <span class="code">select</span> input element.</p>
+      <div class="wrapper">
+        <span class="dropdown">
+          <button class="file-dropdown" name="project-dropdown">Select a project ...</button>
+          <div id="project-dropdown" class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </span>
+      </div>
 
-			<h2>Dropdown menu: mini<span id="mini-dropdown" class="sub-positioner"></span></h2>
-				<p>This dropdown belongs in the Input section above, but it's good to have it here to see the difference between the file dropdown and this option dropdown.</p>
+      <h2>Dropdown menu: mini<span id="mini-dropdown" class="sub-positioner"></span></h2>
+        <p>This dropdown belongs in the Input section above, but it's good to have it here to see the difference between the file dropdown and this option dropdown.</p>
 
-				<p>In an option dropdown we can adjust the styling and mess with the shadow DOM a little, but some important functionality has to be maintained (which is why it's not just a file dropdown, like the one above). For example, an option dropdown should allow the user to select a number with the arrow keys or press enter to select, and tab to the next dropdown element. This is useful for situations such as the Settings tab where there's lots of small values to adjust, but isn't vital for choosing a project name, which is why we have taken liberties above but not here.</p>
+        <p>In an option dropdown we can adjust the styling and mess with the shadow DOM a little, but some important functionality has to be maintained (which is why it's not just a file dropdown, like the one above). For example, an option dropdown should allow the user to select a number with the arrow keys or press enter to select, and tab to the next dropdown element. This is useful for situations such as the Settings tab where there's lots of small values to adjust, but isn't vital for choosing a project name, which is why we have taken liberties above but not here.</p>
 
-				<p>This dropdown has styles for both active and disabled states.</p>
-			<div class="wrapper">
-				<div class="left-choice">Choose a number:</div>
-					<div class="right-choice">
-						<span class="mini-dropdown">
-							<select type="text" id="block-size">
-								<option>65</option>
-								<option>456</option>
-								<option>3</option>
-								<option selected>68</option>
-								<option>263</option>
-							</select><!-- end dropdown span -->
-						</span>
-					</div><!-- end rightchoice -->
-					<br /><br />
-					<div class="left-choice">Choose another:</div>
-					<div class="right-choice">
-						<span class="mini-dropdown disabled">
-						<select disabled type="text" id="block-size">
-							<option>2</option>
-							<option>8</option>
-							<option>16</option>
-							<option selected>64</option>
-							<option>128</option>
-						</select><!-- end dropdown span -->
-						</span>
-					</div>
-				</div><!-- end wrapper -->
-	</section>
+        <p>This dropdown has styles for both active and disabled states.</p>
+      <div class="wrapper">
+        <div class="left-choice">Choose a number:</div>
+          <div class="right-choice">
+            <span class="mini-dropdown">
+              <select type="text" id="block-size">
+                <option>65</option>
+                <option>456</option>
+                <option>3</option>
+                <option selected>68</option>
+                <option>263</option>
+              </select><!-- end dropdown span -->
+            </span>
+          </div><!-- end rightchoice -->
+          <br /><br />
+          <div class="left-choice">Choose another:</div>
+          <div class="right-choice">
+            <span class="mini-dropdown disabled">
+            <select disabled type="text" id="block-size">
+              <option>2</option>
+              <option>8</option>
+              <option>16</option>
+              <option selected>64</option>
+              <option>128</option>
+            </select><!-- end dropdown span -->
+            </span>
+          </div>
+        </div><!-- end wrapper -->
+  </section>
 
-	<hr />
+  <hr />
 
-	<section>
-		<h1>Inputs<span id="inputs" class="positioner"></span></h1>
+  <section>
+    <h1>Inputs<span id="inputs" class="positioner"></span></h1>
 
-		<h2>Buttons<span id="buttons" class="sub-positioner"></span></h2>
+    <h2>Buttons<span id="buttons" class="sub-positioner"></span></h2>
 
-		<button>Here is a button</button>
-		<button disabled>Now it's disabled</button>
-		
-		<p><button class="create-project">We can use this to create files</button></p>
+    <button>Here is a button</button>
+    <button disabled>Now it's disabled</button>
+    
+    <p><button class="create-project">We can use this to create files</button></p>
 
-		<h2>Switches<span id="switches" class="sub-positioner"></span></h2>
-		
-		<p>Here's some boolean switches that you can turn on and off:</p>
+    <h2>Switches<span id="switches" class="sub-positioner"></span></h2>
+    
+    <p>Here's some boolean switches that you can turn on and off:</p>
 
-		<input class="checkbox-slider" type="checkbox" checked></input>
-		<br />
-		<input class="checkbox-slider" type="checkbox"></input>
-		<p>We can also disable it:</p>
+    <input class="checkbox-slider" type="checkbox" checked></input>
+    <br />
+    <input class="checkbox-slider" type="checkbox"></input>
+    <p>We can also disable it:</p>
 
-		<input class="checkbox-slider" type="checkbox" disabled></input>
-		<!-- All kinds of buttons, selectors, and form elements. -->
-		<h2>Number selectors<span id="number-selector" class="sub-positioner"></span></h2>
-		<p>Select a number:</p>
-		<span class="number-picker">
-			<span class="number decrement" name="example"><i class="fa fa-minus"></i></span><input id="example" class="input-number" type="text" data-func="setCLArg" value="5" min="0" max="10" step="1"><span name="example" class="number increment"><i class="fa fa-plus"></i></span>
-		</span>
-		<p>Disabled selector: </p>
-		<span class="number-picker">
-			<span name="example-disabled" class="number decrement"><i class="fa fa-minus"></i></span><input disabled id="example-disabled" class="input-number" type="text" data-func="setCLArg" value="5" min="0" max="10" step="0.1"><span name="example-disabled" class="number increment"><i class="fa fa-plus"></i></span>
-		</span>
+    <input class="checkbox-slider" type="checkbox" disabled></input>
+    <!-- All kinds of buttons, selectors, and form elements. -->
+    <h2>Number selectors<span id="number-selector" class="sub-positioner"></span></h2>
+    <p>Select a number:</p>
+    <span class="number-picker">
+      <span class="number decrement" name="example"><i class="fa fa-minus"></i></span><input id="example" class="input-number" type="text" data-func="setCLArg" value="5" min="0" max="10" step="1"><span name="example" class="number increment"><i class="fa fa-plus"></i></span>
+    </span>
+    <p>Disabled selector: </p>
+    <span class="number-picker">
+      <span name="example-disabled" class="number decrement"><i class="fa fa-minus"></i></span><input disabled id="example-disabled" class="input-number" type="text" data-func="setCLArg" value="5" min="0" max="10" step="0.1"><span name="example-disabled" class="number increment"><i class="fa fa-plus"></i></span>
+    </span>
 
-		<h2>Text box inputs<span id="text-boxes" class="sub-positioner"></span></h2>
-		<div class="wrapper">
-			<p>This is a text box: <input type="text"></input></p>
-			<p>Now it's disabled: <input type="text" disabled></div></p>
-		
+    <h2>Text box inputs<span id="text-boxes" class="sub-positioner"></span></h2>
+    <div class="wrapper">
+      <p>This is a text box: <input type="text"></input></p>
+      <p>Now it's disabled: <input type="text" disabled></div></p>
+    
 
-		<h2>Sliders<span id="sliders" class="sub-positioner"></span></h2>
-		<div class="wrapper">
-			<p>Here are some sliders you can adjust. There is a difference in appearance when a slider is in focus, or not in focus:</p>
-			<input class="range-slider" type="range"></input>
-			<input class="range-slider" type="range"></input>
-			<input class="range-slider" type="range"></input>	
-			<p>We can also disable sliders:</p>
-			<input class="range-slider" type="range" disabled></input>
+    <h2>Sliders<span id="sliders" class="sub-positioner"></span></h2>
+    <p>Here are some sliders you can adjust. There is a difference in appearance when a slider is in focus, or not in focus:</p>
+    <div class="wrapper">
+      <input class="range-slider" type="range"></input>
+      <input class="range-slider" type="range"></input>
+      <input class="range-slider" type="range"></input>  
+      <p>We can also disable sliders:</p>
+      <input class="range-slider" type="range" disabled></input>
+    </div>
+
+  <h2>Radio buttons<span id="radio-buttons" class="sub-positioner"></span></h2>
+  <p>A radio button is used to indicate a single choice from a range of options.</p>
+  <div class="wrapper">
+    <form>
+      <label>
+        C++
+        <input type="radio" checked>
+        <span class="radio-button"></span>
+      </label>
+      <label type="radio">
+        Pure Data
+        <input type="radio">
+        <span class="radio-button"></span>
+      </label>
+      <label type="radio">
+        Supercollider
+        <input type="radio">
+        <span class="radio-button"></span>
+      </label>
+      <label type="radio">
+        CSond
+        <input type="radio">
+        <span class="radio-button"></span>
+      </label>
+    </form>
+
+  </section>
+
+
+  <hr />
+
+  <section>
+    <h1>Data<span id="data" class="positioner"></span></h1>
+
+    <h2>Tables<span id="tables" class="sub-positioner"></span></h2>
+    <p>Tables are used only to contain tabular data.</p>
+    <table>
+      <!-- The first row is the header row, and should be highlighted. -->
+      <tr>
+        <td>Name of data</td>
+        <td>Value 1</td>
+        <td>Value 2</td>
+        <td>Value 3</td>
+        <td>Value 4</td>
+      </tr>
+      <tr>
+        <td>Thing</td>
+        <td>5.67</td>
+        <td>6.98</td>
+        <td>4.25</td>
+        <td>2.64</td>
+      </tr>
+      <tr>
+        <td>Other thing</td>
+        <td>4.74</td>
+        <td>9.45</td>
+        <td>0.25</td>
+        <td>1.46</td>
+      </tr>
+      <tr>
+        <td>Another thing</td>
+        <td>5.46</td>
+        <td>1.75</td>
+        <td>1.68</td>
+        <td>4.26</td>
+      </tr>
+      <tr>
+        <td>Last thing</td>
+        <td>4.89</td>
+        <td>2.68</td>
+        <td>1.69</td>
+        <td>8.28</td>
+      </tr>
+    </table>
+
+    <h2>Unordered lists<span id="u-lists" class="sub-positioner"></span></h2>
+    <ul>
+      <li>Thing one<br />Things on a new line!</li>
+      <li>Thing two</li>
+      <li>Thing three</li>
+    </ul>
+
+    <h2>Ordered lists<span id="o-lists" class="sub-positioner"></span></h2>
+    <p>In order for ordered lists to be displayed correctly, the content inside the <span class="code">li</span> tag are wrapped in <span class="code">span</span> elements. You're right, it should be easier and fixed in CSS2, but here we are in CSS3, stylin the web like it's 1999.</p>
+    <ol>
+      <li><span>Thing one</span></li>
+      <li><span>Thing two</span></li>
+      <li><span>Thing three</span></li>
+    </ol>
+
+  </section>
+
+  <hr />
+
+  <section>
+    <h1>Logos<span id="logos" class="positioner"></span></h1>
+
+    <p>The Bela brand uses logos across all platforms and products. This section provides samples, as well as links to download high-res versions of these logos.</p>
+
+    <h2>Bela Logo<span id="main-logo" class="sub-positioner"></h2>
+
+    <p>The Bela logo is only for use on products that are designed or licensed by Bela. This is to avoid confusion, and so you can be sure that anything with the Bela logo is supported by us. (If you would like to use a Bela logo on your project, we have a version just for that! Please see the <a href="#made-with-logo">Made With Bela logo</a> section for guidelines.)</p>
+
+    <p>The Bela logo appears in monochrome and with palette colours. Usually the logo uses <span class="code">$teal-01</span> but <span class="code">$teal-main</span> can also be used.</p>
+
+    <div class="graphics">
+    	<img src="images/bela_logo_colour.png" />
+			<figcaption><a href="images/downloads/bela_logo_colour.svg">Download</a></figcaption>
 		</div>
 
-	<h2>Radio buttons<span id="radio-buttons" class="sub-positioner"></span></h2>
-	<div class="wrapper">
-		<p>A radio button is used to indicate a single choice from a range of options.</p>
-		<form>
-			<label>
-				C++
-				<input type="radio" checked>
-				<span class="radio-button"></span>
-			</label>
-			<label type="radio">
-				Pure Data
-				<input type="radio">
-				<span class="radio-button"></span>
-			</label>
-			<label type="radio">
-				Supercollider
-				<input type="radio">
-				<span class="radio-button"></span>
-			</label>
-			<label type="radio">
-				CSond
-				<input type="radio">
-				<span class="radio-button"></span>
-			</label>
-		</form>
-		<!-- <div class="radio">
-			<ul>
-				<li><input type="radio" id="cplus" name="selector">
-				<label for="cplus">C++</label>
-				<div class="check"></div>
-				</li>
+    <div class="graphics">
+	    <img src="images/bela_black.png" />
+	    <figcaption><a href="images/downloads/bela_logo_black.svg">Download</a></figcaption>
+	  </div>
 
-				<li><input type="radio" id="pd" name="selector">
-				<label for="pd">Pure Data</label>
-				<div class="check"></div>
-				</li>
+		<p>The Bela usually has an accompanying text component. This text can be aligned right:</p>
 
-				<li><input type="radio" id="supercollider" name="selector">
-				<label for="supercollider">Super Collider</label>
-				<div class="check"></div>
-				</li>
-			</ul>
-		</div> -->
-	</section>
+		<div class="graphics">
+	    <img src="images/bela_logo_colour_text.png" />
+			<figcaption><a href="images/downloads/bela_logo_colour_text_right.svg">Download</a></figcaption>
+		</div>
 
+		<div class="graphics">
+    	<img src="images/bela_logo_black_text.png" />
+    	<figcaption><a href="images/downloads/bela_logo_black_text_right.svg">Download</a></figcaption>
+		</div>
 
-	<hr />
+		<p>This text can also be centred:</p>
+		<div class="graphics">
+	    <img src="images/bela_logo_colour_text_centre.png" />
+			<figcaption><a href="images/downloads/bela_logo_colour_text_centre.svg">Download</a></figcaption>
+		</div>
 
-	<section>
-		<h1>Data<span id="data" class="positioner"></span></h1>
+		<div class="graphics">
+	    <img src="images/bela_logo_black_text_centre.png" />
+	    <figcaption><a href="images/downloads/bela_logo_black_text_centre.svg">Download</a></figcaption>
+	  </div>
 
-		<h2>Tables<span id="tables" class="sub-positioner"></span></h2>
-		<p>Tables are used only to contain tabular data.</p>
-		<table>
-			<!-- The first row is the header row, and should be highlighted. -->
-			<tr>
-				<td>Name of data</td>
-				<td>Value 1</td>
-				<td>Value 2</td>
-				<td>Value 3</td>
-				<td>Value 4</td>
-			</tr>
-			<tr>
-				<td>Thing</td>
-				<td>5.67</td>
-				<td>6.98</td>
-				<td>4.25</td>
-				<td>2.64</td>
-			</tr>
-			<tr>
-				<td>Other thing</td>
-				<td>4.74</td>
-				<td>9.45</td>
-				<td>0.25</td>
-				<td>1.46</td>
-			</tr>
-			<tr>
-				<td>Another thing</td>
-				<td>5.46</td>
-				<td>1.75</td>
-				<td>1.68</td>
-				<td>4.26</td>
-			</tr>
-			<tr>
-				<td>Last thing</td>
-				<td>4.89</td>
-				<td>2.68</td>
-				<td>1.69</td>
-				<td>8.28</td>
-			</tr>
-		</table>
+	  <h2>Made with Bela<span id="made-with-logo" class="sub-positioner"></h2>
 
-		<h2>Unordered lists<span id="u-lists" class="sub-positioner"></span></h2>
-		<ul>
-			<li>Thing one<br />Things on a new line!</li>
-			<li>Thing two</li>
-			<li>Thing three</li>
-		</ul>
+	  <p>The Bela logos above are reserved for use exclusively on Bela designed or licensed products. If you'd like to use a Bela logo for making a sticker or engraving on your own project, we've got a logo version just for that:</p>
 
-		<h2>Ordered lists<span id="o-lists" class="sub-positioner"></span></h2>
-		<p>In order for ordered lists to be displayed correctly, the content inside the <span class="code">li</span> tag are wrapped in <span class="code">span</span> elements. You're right, it should be easier and fixed in CSS2, but here we are in CSS3, stylin the web like it's 1999.</p>
-		<ol>
-			<li><span>Thing one</span></li>
-			<li><span>Thing two</span></li>
-			<li><span>Thing three</span></li>
-		</ol>
+		<div class="graphics">
+	    <img src="images/made_with_bela_logo.png" />
+	    <figcaption><a href="images/downloads/made_with_bela_logo.svg">Download</a></figcaption>
+	  </div>	  
 
-	</section>
+    <h2>TRILL<span id="trill-logo" class="sub-positioner"></h2>
+    <p>In 2019 Bela is launching TRILL, a new family of high-resolution touch sensors.</p>
 
-	<hr />
+    <p>There are two versions. One has no tagline:</p>
 
-	<section>
-		<h1>Products<span id="products" class="positioner"></span></h1>
+    <div class="graphics">
+	    <img src="images/trill_logo.png" />
+			<figcaption><a href="images/downloads/trill_logo.svg">Download</a></figcaption>
+		</div>
 
-		<h2>Bela Logo<span id="main-logo" class="sub-positioner"></h2>
-		<h2>TRILL<span id="trill-logo" class="sub-positioner"></h2>
-		<h2>SALT and PEPPER<span id="salt-pepper-logo" class="sub-positioner"></h2>
-		<h2>Made with Bela<span id="made-with-logo" class="sub-positioner"></h2>
-				
-	</section>
+		<p>The other includes the tagline for TRILL:</p>
+
+		<div class="graphics">
+	    <img src="images/trill_logo_text.png" />
+			<figcaption><a href="images/downloads/trill_logo_text.svg">Download</a></figcaption>
+		</div>
+
+    <h2>SALT and PEPPER<span id="salt-pepper-logo" class="sub-positioner"></h2>
+
+   	<p>SALT (with its companion SALT+) is a programmable synth module that debuted in 2018. In 2019 we released PEPPER, a PCB for building your own synth module for prototyping. Those logos are here:</p>
+
+    <div class="graphics">
+	    <img src="images/salt_logo.png" />
+			<figcaption><a href="images/downloads/salt_logo.svg">Download</a></figcaption>
+		</div>
+
+		<div class="graphics">
+	    <img src="images/pepper_logo.png" />
+			<figcaption><a href="images/downloads/pepper_logo.svg">Download</a></figcaption>
+		</div>
+        
+  </section>
 
 </div><!-- end right div -->
 
 </body>
-	<script src="js/jquery-3.1.1.min.js"></script>
-	<script src="js/header.js"></script>
-	<script src="js/global.js"></script>
-	<script src="https://kit.fontawesome.com/01d640b1b7.js"></script>
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/header.js"></script>
+  <script src="js/global.js"></script>
+  <script src="https://kit.fontawesome.com/01d640b1b7.js"></script>
 </html>
