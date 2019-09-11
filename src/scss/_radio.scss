@@ -5,104 +5,104 @@ form {
     margin-bottom: 10px;
     > label {
       cursor: pointer;
-    	display: block;
-    	padding-left: 2em;
-    	position: relative;
+      display: block;
+      padding-left: 2em;
+      position: relative;
 
-    	>.radio-button {
-    		background-color: #bdbdbd;
-    		border-radius: 50%;
-    		height: 1em;
-    		left: 0;
-    		margin-top: .5em;
-    		position: absolute;
-    		top: 0;
-    		width: 1em;
-    		&:hover {
-    			background-color: #1ce8b5;
-    			opacity: 1;
-    		}
-    	}
-    	> input[type="radio"] {
-  	    visibility: hidden;
-  	    &:checked {
-  	    		background-color: blue;
-  	    	
-  	    }
-    	}
+      >.radio-button {
+        background-color: #bdbdbd;
+        border-radius: 50%;
+        height: 1em;
+        left: 0;
+        margin-top: .5em;
+        position: absolute;
+        top: 0;
+        width: 1em;
+        &:hover {
+          background-color: #1ce8b5;
+          opacity: 1;
+        }
+      }
+      > input[type="radio"] {
+        visibility: hidden;
+        &:checked {
+            background-color: blue;
+          
+        }
+      }
     }
   }
 
 .radio {
-	font-family: inherit;
-	> ul {
-		list-style: none;
-		width: 100%;
-		margin: 0;
-		padding: 0;
-		> li {
-			display: block;
-			position: relative;
-			float: left;
-			width: 100%;
-				&:before {
-					display: none;
-				}
-				> input[type=radio]{
-					position: absolute;
-					visibility: hidden;
-				}
-				> label {
-					display: block;
-					position: relative;
-					@include normal-text;
-					padding: 0 0 0 80px;
-					margin: 7px auto 10px;
-					z-index: 9;
-					cursor: pointer;
-					-webkit-transition: all 0.25s linear;
-				}
-				> .check{
-					display: block;
-					position: absolute;
-					border: 4px solid $grey-mid;
-					border-radius: 100%;
-					height: 13px;
-					width: 13px;
-					top: 12px;
-					left: 20px;
-					z-index: 5;
-					transition: border .2s ease-in-out;
-					-webkit-transition: border .2s ease-in-out;
-				}
-				&:hover .check {
-					border-color: rgba($teal-main, 0.6);
-				}
-				> .check::before {
-					display: block;
-					position: absolute;
-					content: '';
-					border-radius: 100%;
-					height: 7px;
-					width: 7px;
-					top: 3px;
-					left: 3px;
-					margin: auto;
-					transition: background 0.17s ease-in-out;
-					-webkit-transition: background 0.17s ease-in-out;
+  font-family: inherit;
+  > ul {
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    > li {
+      display: block;
+      position: relative;
+      float: left;
+      width: 100%;
+        &:before {
+          display: none;
+        }
+        > input[type=radio]{
+          position: absolute;
+          visibility: hidden;
+        }
+        > label {
+          display: block;
+          position: relative;
+          @include normal-text;
+          padding: 0 0 0 80px;
+          margin: 7px auto 10px;
+          z-index: 9;
+          cursor: pointer;
+          -webkit-transition: all 0.25s linear;
+        }
+        > .check{
+          display: block;
+          position: absolute;
+          border: 4px solid $grey-mid;
+          border-radius: 100%;
+          height: 13px;
+          width: 13px;
+          top: 12px;
+          left: 20px;
+          z-index: 5;
+          transition: border .2s ease-in-out;
+          -webkit-transition: border .2s ease-in-out;
+        }
+        &:hover .check {
+          border-color: rgba($teal-main, 0.6);
+        }
+        > .check::before {
+          display: block;
+          position: absolute;
+          content: '';
+          border-radius: 100%;
+          height: 7px;
+          width: 7px;
+          top: 3px;
+          left: 3px;
+          margin: auto;
+          transition: background 0.17s ease-in-out;
+          -webkit-transition: background 0.17s ease-in-out;
 
-				}
-			}
-		}
+        }
+      }
+    }
 
-	input[type=radio]:checked ~ .check {
-		border: 4px solid $teal-main;
-	}
+  input[type=radio]:checked ~ .check {
+    border: 4px solid $teal-main;
+  }
 
-	input[type=radio]:checked ~ .check::before{
-		background: rgba($teal-main, 0.5);
-	}
-	input [type="radio"] {
-		display: none;
-	}
+  input[type=radio]:checked ~ .check::before{
+    background: rgba($teal-main, 0.5);
+  }
+  input [type="radio"] {
+    display: none;
+  }
 }

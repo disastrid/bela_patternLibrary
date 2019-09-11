@@ -43,12 +43,12 @@ input[type="checkbox"].checkbox-slider
     }
 
     &:disabled {
-    	&::before {
-    		background: rgba($black, 0.4);
-    	}
-    	&::after {
-    		background: rgba($white, 0.6);
-    	}
+      &::before {
+        background: rgba($black, 0.4);
+      }
+      &::after {
+        background: rgba($white, 0.6);
+      }
 
     }
   }

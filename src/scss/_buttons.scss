@@ -1,5 +1,5 @@
 button {
-	border: 1px solid #00bea4;
+  border: 1px solid #00bea4;
   background-color: #ffffff;
   border-radius: 3px;
   color: #000;
@@ -7,37 +7,37 @@ button {
   cursor: pointer;
   font-family: poppins_light;
   padding: .5em .7em;
-	
-	&:hover {
-		background-color: $teal-main;
-		color: $white;
-		transition: 0.15s ease-in-out;
-		
-		
-	}
-	&.create-project {
-		font-size: 14px;
-		margin-top: -1px;
-		padding-right: 20px;
-		&:before {
-			content: '\02795'; /* Unicode character for "plus" sign (+) */
-			font-family: fontAwesome;
-			font-size: 20px;
-			line-height: 20px;
-			vertical-align: middle;
-	        color: rgba($black, 0.8);
-	        margin-right: 5px;
-	        margin-top: 5px;
-	        padding-right: 5px;
-		}
+  
+  &:hover {
+    background-color: $teal-main;
+    color: $white;
+    transition: 0.15s ease-in-out;
+    
+    
+  }
+  &.create-project {
+    font-size: 14px;
+    margin-top: -1px;
+    padding-right: 20px;
+    &:before {
+      content: '\02795'; /* Unicode character for "plus" sign (+) */
+      font-family: fontAwesome;
+      font-size: 20px;
+      line-height: 20px;
+      vertical-align: middle;
+          color: rgba($black, 0.8);
+          margin-right: 5px;
+          margin-top: 5px;
+          padding-right: 5px;
+    }
         &:hover {
-        	color: $white;
+          color: $white;
         }
-	}
-	&:disabled {
-		background-color: rgba(0, 0, 0, 0.1); // Background
-		color: rgba(0, 0, 0,0.9); // Text colour
-		border: 1px solid rgba(0, 0, 0, 0.1);
-	}
-	transition: $trans-fast ease-in-out;
+  }
+  &:disabled {
+    background-color: rgba(0, 0, 0, 0.1); // Background
+    color: rgba(0, 0, 0,0.9); // Text colour
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  transition: $trans-fast ease-in-out;
 }

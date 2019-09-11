@@ -1,50 +1,50 @@
 // This is the component used in the Scope to adjust values
 
 input[type="range"].range-slider {
-	-webkit-appearance: none;
-	width: 70%;
-	padding: 3px 0;
-	&::-webkit-slider-runnable-track {
-		height: 20px;
-		cursor: pointer;
-		background: rgba($black, .2);
-		border-radius: 9px;
-		padding: 2px;
-		&:hover {
-			background: rgba($teal-01, .9);
-		}
-	}
-	&::-webkit-slider-thumb {
-		box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-		height: 16px;
-		width: 16px;
-		border-radius: 8px;
-		background: rgba($white, 0.8);
-		cursor: pointer;
-		margin-top: 0px;
-		transition: $trans-reg, ease-in-out;
-		-webkit-appearance: none;
-	}
-	
-	&:hover::-webkit-slider-thumb, &:active::-webkit-slider-thumb {
-		background-color: $white;
-		box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
-		
-	}
+  -webkit-appearance: none;
+  width: 70%;
+  padding: 3px 0;
+  &::-webkit-slider-runnable-track {
+    height: 20px;
+    cursor: pointer;
+    background: rgba($black, .2);
+    border-radius: 9px;
+    padding: 2px;
+    &:hover {
+      background: rgba($teal-01, .9);
+    }
+  }
+  &::-webkit-slider-thumb {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    height: 16px;
+    width: 16px;
+    border-radius: 8px;
+    background: rgba($white, 0.8);
+    cursor: pointer;
+    margin-top: 0px;
+    transition: $trans-reg, ease-in-out;
+    -webkit-appearance: none;
+  }
+  
+  &:hover::-webkit-slider-thumb, &:active::-webkit-slider-thumb {
+    background-color: $white;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+    
+  }
 
-	&:disabled {
-		&::-webkit-slider-runnable-track {
-			background: rgba($black, 0.2);
-		}
-		&::-webkit-slider-thumb {
-			background: rgba($white, 0.2);
-			box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
-		}
-	}
+  &:disabled {
+    &::-webkit-slider-runnable-track {
+      background: rgba($black, 0.2);
+    }
+    &::-webkit-slider-thumb {
+      background: rgba($white, 0.2);
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+    }
+  }
 
 
     
-    		// background: rgba($black, 0.5);
+        // background: rgba($black, 0.5);
     
-    	
+      
 }
