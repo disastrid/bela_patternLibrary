@@ -1,18 +1,17 @@
 button {
-	border-top: rgba($teal-main, 0.4);
-	border-left: rgba($teal-main, 0.4);
-	border-right: rgba($teal-main, 0.4);
-	border-bottom: 2px solid rgba($teal-main, 1.0);
-	background-color: rgba($teal-main, 0.4);
-	padding: 6px 12px;
-	font-family: poppins_light;
-	border-radius: 2px;
-	cursor: pointer;
-
+	border: 1px solid #00bea4;
+  background-color: #ffffff;
+  border-radius: 3px;
+  color: #000;
+  font-size: .8em;
+  cursor: pointer;
+  font-family: poppins_light;
+  padding: .5em .7em;
+	
 	&:hover {
-		background-color: rgba($teal-main, 0.7);
-		color: rgba($white, 0.9);
-		transition: 0.25s ease-in-out;
+		background-color: $teal-main;
+		color: $white;
+		transition: 0.15s ease-in-out;
 		
 		
 	}
@@ -26,7 +25,7 @@ button {
 			font-size: 20px;
 			line-height: 20px;
 			vertical-align: middle;
-	        color: rgba($black, 0.4);
+	        color: rgba($black, 0.8);
 	        margin-right: 5px;
 	        margin-top: 5px;
 	        padding-right: 5px;
@@ -38,10 +37,7 @@ button {
 	&:disabled {
 		background-color: rgba(0, 0, 0, 0.1); // Background
 		color: rgba(0, 0, 0,0.9); // Text colour
-		border-top: rgba(0, 0, 0, 0.1);
-		border-left: rgba(0, 0, 0, 0.1);
-		border-right: rgba(0, 0, 0, 0.1);
-		border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+		border: 1px solid rgba(0, 0, 0, 0.1);
 	}
 	transition: $trans-fast ease-in-out;
 }
